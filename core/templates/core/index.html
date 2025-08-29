@@ -1,0 +1,194 @@
+{% extends "base.html" %}
+{% load static %}
+{% include 'components/navbar.html' %}
+
+    
+{% block title %} Early Code SIWES{% endblock title %}
+
+</head>
+<body>
+    {% block nav %} {% endblock nav %} 
+
+    {% block content %}
+    <main>
+        <section style="background-image: url('{% static "core\images\20250617_125215@1590062149.jpg" %}');" class="h-[50vh] md:h-[80vh] bg-cover bg-center bg-no-repeat">
+            <div class="relative inset-0 h-[50vh] md:h-[80vh] bg-black/50">
+                <div class="relative z-10 w-full text-center text-white px-4 py-10 flex flex-col justify-center items-center gap-2">
+                    <h1 class="text-3xl md:text-[2.5rem] font-bold mx-auto ">Your Journey from Classroom to Career Starts Here</h1>
+                    <p class="text-md md:text-lg max-w-3xl mt-6">Gain real-world experience, develop in-demand skills, and jumpstart your career in technology with our comprehensive SIWES internship program.</p>
+                    <button class="w-50 bg-blue-500 px-5 py-3 text-white text-lg font-semibold rounded-lg mt-6 animate-bounce">Get Started Now</button>
+                </div>
+            </div>
+        </section>
+
+        {% comment %} Internship Program {% endcomment %}
+        <section class="my-7 mx-auto">
+            <div class="flex flex-col gap-2 mx-auto">
+                <h2 class=" text-[1.8rem] text-center font-bold capitalize mx-auto">internship program</h2>
+                <div class="mt-1 w-12 mx-auto h-1 bg-yellow-400"></div>
+                <p class="text-center text-wrap mx-auto text-sm text-md text-slate-600 px-3">Our program is designed to provide SIWES IT students with hands-on experience and professional development</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mx-10 my-5 ">
+                    <div class="py-5 px-3 w-full md:w-80 h-auto border-t-5 border-blue-500 rounded-xl hover:shadow-lg ">
+                        <div class="flex justify-center items-center gap-3 p-2"> 
+                            <i class="fa-solid fa-clock fa-xl text-yellow-400"></i>
+                            <p class="text-blue-900 text-xl font-bold">Program Duration</p>
+                        </div>
+                        <div class="px-6 py-3">
+                            <ul class="list-disc list flex flex-col gap-3 text-md justify-around items-start p-2">
+                                <li>3-6 month flexible program</li>
+                                <li>Full-time and part-time options available</li>
+                                <li>Start dates throughout the year</li>
+                                <li>Possibility of job placement based on performance</li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                    <div class="py-5 px-3 w-full md:w-80 h-auto border-t-5 border-blue-500 rounded-xl hover:shadow-lg ">
+                        <div class="flex justify-center items-center gap-3 p-2"> 
+                            <i class="fa-solid fa-gift fa-xl text-yellow-400"></i>
+                            <p class="text-blue-900 text-xl font-bold">Benefits</p>
+                        </div>
+                        <div class="px-6 py-3">
+                           <ul class="list-disc list flex flex-col gap-3 text-md justify-around items-start p-2">
+                                <li>Hands-on experience with real projects</li>
+                                <li>Mentorship from industry professional</li>
+                                <li>Networking opportunities</li>
+                                <li>Certificate of Completion</li>
+                                <li>Potential job offer for top performers</li>
+                            </ul> 
+                        </div>
+                        
+                    </div>
+                    <div class="p-5 w-full md:w-80 h-auto border-t-5 border-blue-500 rounded-xl hover:shadow-lg ">
+                        <div class="flex justify-center items-center gap-3 p-2"> 
+                            <i class="fa-solid fa-gear fa-xl text-yellow-400"></i>
+                            <p class="text-blue-900 text-xl font-bold">Process</p>
+                        </div>
+                        <div class="px-6 py-3">
+                            <ul class="list-disc list flex flex-col gap-3 text-md justify-around items-start">
+                                <li>Applicaton and screening</li>
+                                <li>Technical assessment</li>
+                                <li>Interview with our team</li>
+                                <li>Onboarding and orientation</li>
+                                <li>Regular process evaluation</li>
+                                <li>Final project presentation</li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        {% comment %} Requirements {% endcomment %}
+        <section class="my-5 py-10 mx-auto bg-gray-100">
+            <div class="flex flex-col gap-2 mx-auto">
+                <h2 class="text-[1.8rem] text-center font-bold capitalize mx-auto">Requirements</h2>
+                <div class="mt-1 w-12 mx-auto h-1 bg-yellow-400"></div>
+                <p class="text-center text-wrap w-2/3 mx-auto text-sm text-md text-slate-600 px-3">What you need to join our SIWES internship program</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mx-10 my-5 ">
+                    <div class="py-5 px-3 w-full h-auto rounded-xl shadow-lg">
+                        <div class="flex justify-center items-center gap-3 p-2"> 
+                            <i class="fa-solid fa-user-graduate fa-xl text-blue-300"></i>
+                            <p class="text-xl font-bold">Eligibility Criteria</p>
+                        </div>
+                        <div class="px-6 py-3">
+                            <ul class="list-disc list flex flex-col gap-3 text-md justify-around items-start p-2">
+                                <li>Currently enrolled in an IT-related degree program</li>
+                                <li>Knowledge of programming/tech concepts is not compulsory</li>
+                                <li>Strong problem-solving skills</li>
+                                <li>Good communication abilities</li>
+                                <li>Ability to work in a team environment</li>
+                                <li>Passion for technology and learning</li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                    <div class="py-5 px-3 w-full h-auto rounded-xl shadow-lg ">
+                        <div class="flex justify-center items-center gap-3 p-2"> 
+                            <i class="fa-solid fa-file fa-xl text-blue-300"></i>
+                            <p class=" text-xl font-bold">Documents Needed</p>
+                        </div>
+                        <div class="px-6 py-3">
+                           <ul class="list-disc list flex flex-col gap-3 text-md justify-around items-start p-2">
+                                <li>Updated resume/CV</li>
+                                <li>Enrollment into one of the main IT programs in earlycode</li>
+                                <li>SIWES application letter from educational institution</li>
+                                <li>Portfolio of projects (if available)</li>
+                                <li>School-issued ID</li>
+                                <li>Proof of enrollment</li>
+                            </ul> 
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+
+            {% comment %} Articles   {% endcomment %}
+            <div class="my-5 flex flex-col gap-2 mx-auto">
+                <h2 class="text-[1.8rem] text-center font-bold capitalize mx-auto">Articles</h2>
+                <div class="mt-1 w-12 mx-auto h-1 bg-yellow-400"></div>
+                <p class="text-center text-wrap w-2/3 mx-auto text-sm text-md text-slate-600 px-3">Helpful resources that contains more information on this program</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mx-10 my-5 ">
+                    <div class="w-full h-auto rounded-xl shadow-lg">
+                        <div style="background-image: url('{% static "core\images\1000000097.jpg" %}');" class="h-[40vh] bg-cover bg-center bg-no-repeat rounded-t-xl"> 
+                            <div class="bg-blue-500/50 h-[40vh] rounded-t-xl relative inset-0">
+                                <p class="absolute bottom-1/2 mx-auto text-white text-lg font-semibold text-center flex justify-center align-middle px-5">How to prepare for a tech internship</p>
+                            </div>
+                        </div>
+                        <div class="px-6 py-3 flex flex-col gap-4">
+                            <h3 class="capitalize text-blue-800 font-semibold text-lg">Preparing for your tech internship</h3>
+                            <p class="text-md text-slate-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem veritatis eveniet mollitia nemo vitae nam obcaecati porro ullam, </p>
+                            <button class="border-b-2 w-20 text-blue-400 hover:text-blue-600 active:text-blue-800 text-sm font-bold"><a href="http://" target="_blank" rel="noopener noreferrer">Read More</a></button>
+                        </div>                 
+                    </div>
+                    <div class="w-full h-auto rounded-xl shadow-lg">
+                        <div style="background-image: url('{% static "core\images\1000000097.jpg" %}');" class="h-[40vh] bg-cover bg-center bg-no-repeat rounded-t-xl"> 
+                            <div class="bg-blue-500/50 h-[40vh] rounded-t-xl relative inset-0">
+                                <p class="absolute bottom-1/2 mx-auto text-white text-lg font-semibold text-center flex justify-center align-middle px-5">How to prepare for a tech internship</p>
+                            </div>
+                        </div>
+                        <div class="px-6 py-3 flex flex-col gap-4">
+                            <h3 class="capitalize text-blue-800 font-semibold text-lg">Preparing for your tech internship</h3>
+                            <p class="text-md text-slate-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem veritatis eveniet mollitia nemo vitae nam obcaecati porro ullam, </p>
+                            <button class="border-b-2 w-20 text-blue-400 hover:text-blue-600 active:text-blue-800 text-sm font-bold"><a href="http://" target="_blank" rel="noopener noreferrer">Read More</a></button>
+                        </div>                 
+                    </div>
+                    <div class="w-full h-auto rounded-xl shadow-lg">
+                        <div style="background-image: url('{% static "core\images\1000000097.jpg" %}');" class="h-[40vh] bg-cover bg-center bg-no-repeat rounded-t-xl"> 
+                            <div class="bg-blue-500/50 h-[40vh] rounded-t-xl relative inset-0">
+                                <p class="absolute bottom-1/2 mx-auto text-white text-lg font-semibold text-center flex justify-center align-middle px-5">How to prepare for a tech internship</p>
+                            </div>
+                        </div>
+                        <div class="px-6 py-3 flex flex-col gap-4">
+                            <h3 class="capitalize text-blue-800 font-semibold text-lg">Preparing for your tech internship</h3>
+                            <p class="text-md text-slate-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem veritatis eveniet mollitia nemo vitae nam obcaecati porro ullam, </p>
+                            <button class="border-b-2 w-20 text-blue-400 hover:text-blue-600 active:text-blue-800 text-sm font-bold"><a href="http://" target="_blank" rel="noopener noreferrer">Read More</a></button>
+                        </div>                 
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-10">
+            <div style="background-image: url('{% static "core\images\1000000099.jpg" %}');" class=" mx-auto">
+                <div class="bg-black/50 inset-0 ">
+                    <div class="flex flex-col gap-2 mx-auto">
+                    <h2 class=" text-[1.8rem] text-center font-bold capitalize mx-auto">Frequently Asked questions</h2>
+                    <div class="mt-1 w-12 mx-auto h-1 bg-yellow-400"></div>
+                    <p class="text-center text-wrap mx-auto text-sm text-md text-white px-3">Find answers to common questions concerning or internship program</p>
+                </div>
+                </div>
+            </div>
+
+            
+        </section>
+
+    </main>
+    {% endblock content %}
+
+    
+</body>
+</html>

@@ -1,0 +1,28 @@
+{% load static %}
+
+<nav class="">
+    <div class="flex justify-between items-center px-4 md:px-7 py-3 md:py-5">
+        <div class="flex gap-3 justify-center items-center">
+            <div class="w-10 h-10">
+            <img src="{% static "core/images/earlycode.png" %}" alt="Logo"
+            class="w-full h-auto object-contain">
+            </div>
+            <div class="flex flex-col md:gap-1">
+            <h3 class="text-blue-400 font-bold text-xl md:text-2xl">earlycode</h3>
+            <p class="font-bold text-[11px] md:text-[14px] uppercase">internship portal</p>
+            </div>
+        </div>
+        <div class="space-x-3">
+            <button
+            class="bg-blue-500 px-3 py-2 text-white text-md font-bold rounded-md"
+            >
+            Sign up
+            </button>
+            <button
+            class="bg-blue-300 px-3 py-2 text-white text-md font-bold rounded-md"
+            >
+            Log in
+            </button>
+        </div>
+    </div>
+</nav>
