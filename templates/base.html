@@ -1,5 +1,3 @@
-{% include "components/navbar.html" %}
-{% include "components/footer.html" %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,11 +11,18 @@
 </head>
 
 <body>
-    <div id="content">
+
+    {% include "components/navbar.html" %}
+
+    <main id="content">
         {% block content %}{% endblock %}
-    </div>
+    </main>
+
+    {% include "components/footer.html" %}
 
     {% load django_browser_reload %}
     {% django_browser_reload_script %}
+
 </body>
+
 </html>

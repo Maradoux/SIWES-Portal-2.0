@@ -1,2 +1,22 @@
 @import "tailwindcss";
 @import "@fortawesome/fontawesome-free/css/all.min.css";
+
+/* .item .activeIcon{
+    @apply hidden;
+}
+
+.item.active .inactiveIcon{
+    @apply hidden;
+}
+
+.item.active .activeIcon{
+    @apply block;
+}
+
+.item:not(.active) .content{
+    @apply  h-0 overflow-hidden py-0;
+}
+
+.item.active .content{
+    @apply p-8;
+} */

@@ -1,20 +1,17 @@
 {% extends "base.html" %}
+
 {% load static %}
-{% include 'components/navbar.html' %}
+ 
+{% block title %} Early Code SIWES {% endblock title %}
 
-    
-{% block title %} Early Code SIWES{% endblock title %}
-
-</head>
 <body>
-    {% block nav %} {% endblock nav %} 
-
+    
     {% block content %}
     <main>
         <section style="background-image: url('{% static "core\images\20250617_125215@1590062149.jpg" %}');" class="h-[50vh] md:h-[80vh] bg-cover bg-center bg-no-repeat">
             <div class="relative inset-0 h-[50vh] md:h-[80vh] bg-black/50">
                 <div class="relative z-10 w-full text-center text-white px-4 py-10 flex flex-col justify-center items-center gap-2">
-                    <h1 class="text-3xl md:text-[2.5rem] font-bold mx-auto ">Your Journey from Classroom to Career Starts Here</h1>
+                    <h1 class="text-3xl md:text-[2.5rem] font-bold mx-auto">Your Journey from Classroom to Career Starts Here</h1>
                     <p class="text-md md:text-lg max-w-3xl mt-6">Gain real-world experience, develop in-demand skills, and jumpstart your career in technology with our comprehensive SIWES internship program.</p>
                     <button class="w-50 bg-blue-500 px-5 py-3 text-white text-lg font-semibold rounded-lg mt-6 animate-bounce">Get Started Now</button>
                 </div>
@@ -49,7 +46,7 @@
                             <p class="text-blue-900 text-xl font-bold">Benefits</p>
                         </div>
                         <div class="px-6 py-3">
-                           <ul class="list-disc list flex flex-col gap-3 text-md justify-around items-start p-2">
+                        <ul class="list-disc list flex flex-col gap-3 text-md justify-around items-start p-2">
                                 <li>Hands-on experience with real projects</li>
                                 <li>Mentorship from industry professional</li>
                                 <li>Networking opportunities</li>
@@ -111,7 +108,7 @@
                             <p class=" text-xl font-bold">Documents Needed</p>
                         </div>
                         <div class="px-6 py-3">
-                           <ul class="list-disc list flex flex-col gap-3 text-md justify-around items-start p-2">
+                        <ul class="list-disc list flex flex-col gap-3 text-md justify-around items-start p-2">
                                 <li>Updated resume/CV</li>
                                 <li>Enrollment into one of the main IT programs in earlycode</li>
                                 <li>SIWES application letter from educational institution</li>
@@ -174,21 +171,125 @@
 
         <section class="py-10">
             <div style="background-image: url('{% static "core\images\1000000099.jpg" %}');" class=" mx-auto">
-                <div class="bg-black/50 inset-0 ">
+                <div class="bg-black/10 inset-0 ">
                     <div class="flex flex-col gap-2 mx-auto">
-                    <h2 class=" text-[1.8rem] text-center font-bold capitalize mx-auto">Frequently Asked questions</h2>
-                    <div class="mt-1 w-12 mx-auto h-1 bg-yellow-400"></div>
-                    <p class="text-center text-wrap mx-auto text-sm text-md text-white px-3">Find answers to common questions concerning or internship program</p>
+                        <h2 class=" text-[1.8rem] text-red-700 text-center font-bold capitalize mx-auto">Frequently Asked questions</h2>
+                        <div class="mt-1 w-12 mx-auto h-1 bg-yellow-400"></div>
+                        <p class="text-center text-wrap mx-auto text-sm text-md text-white px-3">Find answers to common questions concerning or internship program</p>
+                    </div>
                 </div>
-                </div>
+
+                <div id="accordion" class="w-[80%] mx-auto flex flex-col bg-slate-700 justify-center items-center gap-3 rounded-md overflow-hidden">
+                    <div class="item border-b-2 border-b-white">
+                        <div class="header p-5 font-bold text-xl flex justify-between items-center cursor-pointer">
+                            <div>What is the duration of the internship program?</div>
+                            <div class="activeIcon"><i class="fa-solid fa-angle-up"></i></div>
+                            <div class="inactiveIcon"><i class="fa-solid fa-angle-down text-xl"></i></div>
+                        </div>
+                        <div class="content bg-blue-600 text-lg text-slate-400 transition-all duration-500">
+                            <p class="mb-5">
+                                Our internship program typically runs for 1-6 months, with flexible start dates throughout the year. We offer both full-time and part-time options to accommodate academic schedules.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item border-b-2 border-b-white">
+                        <div class="header p-5 font-bold text-xl flex justify-between items-center cursor-pointer">
+                            <div>Is this a paid internship</div>
+                            <div><i class="fa-solid fa-angle-down text-xl"></i></div>
+                        </div>
+                        <div class="content h-0 overflow-hidden bg-blue-600 text-lg text-slate-400">
+                            <p class="mb-5">
+                                This is not a paid internship. However, we provide our interns with hands-on training, mentorship, and career development support to prepare them for job opportunities.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item border-b-2 border-b-white">
+                        <div class="header p-5 font-bold text-xl flex justify-between items-center cursor-pointer">
+                            <div>What technical skills do I need to apply?</div>
+                            <div><i class="fa-solid fa-angle-down text-xl"></i></div>
+                        </div>
+                        <div class="content h-0 overflow-hidden bg-blue-600 text-lg text-slate-400">
+                            <p class="mb-5">
+                                You don’t need any prior technical skills to apply. Our internship program is designed to accommodate beginners as well as those with some experience. We provide the training and guidance you need to become proficient in your chosen area during the program.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item border-b-2 border-b-white">
+                        <div class="header p-5 font-bold text-xl flex justify-between items-center cursor-pointer">
+                            <div>Can I apply if I'm a beginner with little experience?</div>
+                            <div><i class="fa-solid fa-angle-down text-xl"></i></div>
+                        </div>
+                        <div class="content h-0 overflow-hidden bg-blue-600 text-lg text-slate-400">
+                            <p class="mb-5">
+                                Absolutely! We have positions suitable for beginners. We're primarily looking for enthusiasm, willingness to learn, and problem-solving aptitude rather than extensive experience.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item border-b-2 border-b-white">
+                        <div class="header p-5 font-bold text-xl flex justify-between items-center cursor-pointer">
+                            <div>What kind of projects will I work on?</div>
+                            <div><i class="fa-solid fa-angle-down text-xl"></i></div>
+                        </div>
+                        <div class="content h-0 overflow-hidden bg-blue-600 text-lg text-slate-400">
+                            <p class="mb-5">
+                                You'll work on real projects that impact businesses or clients. This could include web development, mobile app development, data analysis, UX/UI design, or other IT-related tasks depending on your role.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item border-b-2 border-b-white">
+                        <div class="header p-5 font-bold text-xl flex justify-between items-center cursor-pointer">
+                            <div>Will I receive mentorship during the internship?</div>
+                            <div><i class="fa-solid fa-angle-down text-xl"></i></div>
+                        </div>
+                        <div class="content h-0 overflow-hidden bg-blue-600 text-lg text-slate-400">
+                            <p class="mb-5">
+                                Yes, each intern is paired with an experienced mentor who provides guidance, feedback, and support throughout the program.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item border-b-2 border-b-white">
+                        <div class="header p-5 font-bold text-xl flex justify-between items-center cursor-pointer">
+                            <div>What is the application process?</div>
+                            <div><i class="fa-solid fa-angle-down text-xl"></i></div>
+                        </div>
+                        <div class="content h-0 overflow-hidden bg-blue-600 text-lg text-slate-400">
+                            <p class="mb-5">
+                                Our process typically includes: 
+                                <ul>
+                                    <li>SIWES application and acceptance</li>
+                                    <li>Course registration and enrollment</li>
+                                    <li>Onboarding with mentors</li>
+                                    <li>Training and mentorship for successful candidates</li>
+                                </ul>  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item border-b-2 border-b-white">
+                        <div class="header p-5 font-bold text-xl flex justify-between items-center cursor-pointer">
+                            <div>Is there a possibility of full-time employment after the internship?</div>
+                            <div><i class="fa-solid fa-angle-down text-xl"></i></div>
+                        </div>
+                        <div class="content h-0 overflow-hidden bg-blue-600 text-lg text-slate-400">
+                            <p class="mb-5">
+                                We do not offer remote internships. All our internship programs are held on-site to ensure effective hands-on training, teamwork, and mentorship.
+                            </p>
+                        </div>
+                    </div>
             </div>
 
-            
+            <div class="bg-blue-600 h-[50vh] py-5">
+                <div class="w-full text-center text-white px-4 py-10 flex flex-col justify-center items-center gap-3">
+                    <h2 class="text-3xl font-bold">Ready to Lauch Your Tech Career?</h2>
+                    <p class="text-sm md:text-lg max-w-2.5">Join our internship program and gain the skills, experience, and connections you need to succeed in the tech industry.</p>
+                    <a href="#" class="bg-yellow-300 text-blue-400 px-5 py-3 w-50 rounded-lg mt-6">Apply Now</a>
+                </div>
+            </div>
         </section>
 
+        
     </main>
     {% endblock content %}
-
+    
     
 </body>
-</html>
+
